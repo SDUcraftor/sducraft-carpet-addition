@@ -1,0 +1,5 @@
+{
+  "carpet.category.SCA": "SCA",
+  "carpet.rule.skipCropLightCheck.name": "Skip Crop Light Check",
+  "carpet.rule.skipCropLightCheck.desc": "If enable, crop blocks will not check the light."
+}

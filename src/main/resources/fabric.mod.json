@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "sca",
+  "version": "${version}",
+  "name": "sducraft-carpet-addition",
+  "description": "A carpet addition for SDUCraft",
+  "authors": [
+    "Forgot-Dream"
+  ],
+  "contact": {
+    "repo": "https://github.com/Forgot-Dream/sducraft-carpet-addition"
+  },
+  "license": "MIT",
+  "icon": "assets/sca/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "top.sducraft.sca.ScaExtension"
+    ]
+  },
+  "mixins": [
+    "sca.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}",
+    "carpet": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "parent": "carpet"
+    }
+  }
+}
