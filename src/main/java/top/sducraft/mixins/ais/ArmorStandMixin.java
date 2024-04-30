@@ -1,4 +1,4 @@
-package top.sducraft.mixins;
+package top.sducraft.mixins.ais;
 
 
 import net.minecraft.world.damagesource.DamageSource;

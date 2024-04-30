@@ -30,9 +30,9 @@ public class Extension implements CarpetExtension, ModInitializer {
 
     @Override
     public Map<String, String> canHasTranslations(String lang) {
-        Map<String, String> langdict = getTranslationFromResourcePath(String.format("assets/sca/lang/%s.json", lang));
+        Map<String, String> langdict = getTranslationFromResourcePath(String.format("assets/sdu/lang/%s.json", lang));
         if (langdict == null)
-            langdict = getTranslationFromResourcePath("assets/sca/lang/en_us.json");
+            langdict = getTranslationFromResourcePath("assets/sdu/lang/en_us.json");
         return langdict;
     }
 }
