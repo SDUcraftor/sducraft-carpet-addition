@@ -1,5 +1,7 @@
 {
-  "carpet.category.SCA": "SCA",
+  "carpet.category.SDU-carpet": "SDU-carpet",
   "carpet.rule.skipCropLightCheck.desc": "如果启用此选项，作物方块将不检查光照。",
-  "carpet.rule.skipCropLightCheck.name": "作物跳过光照检测"
+  "carpet.rule.skipCropLightCheck.name": "作物跳过光照检测",
+  "carpet.rule.ShulkerBulletDoNotKillArmorStand.name": "禁止潜影贝导弹伤害盔甲架",
+  "carpet.rule.ShulkerBulletDoNotKillArmorStand.desc": "如果启用此选项，潜影贝导弹将不会对盔甲架造成伤害"
 }

@@ -11,15 +11,14 @@
     "repo": "https://github.com/Forgot-Dream/sducraft-carpet-addition"
   },
   "license": "MIT",
-  "icon": "assets/sca/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
-      "top.sducraft.sca.ScaExtension"
+      "top.sducraft.Extension"
     ]
   },
   "mixins": [
-    "sca.mixins.json"
+    "sdu-carpet.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",

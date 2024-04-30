@@ -1,4 +1,4 @@
-package top.sducraft.sca.mixins;
+package top.sducraft.mixins;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.LevelReader;
@@ -12,7 +12,7 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.ModifyConstant;
 import org.spongepowered.asm.mixin.injection.Slice;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import top.sducraft.sca.ScaSettings;
+import top.sducraft.Settings;
 
 @Mixin(CropBlock.class)
 public abstract class CropBlockMixin extends BushBlock {
@@ -23,7 +23,7 @@ public abstract class CropBlockMixin extends BushBlock {
     // 移除种植时光照判断
     @Inject(method = "canSurvive", at = @At(value = "HEAD"), cancellable = true)
     private void canSurvive_RemoveLightCheck(BlockState blockState, LevelReader levelReader, BlockPos blockPos, CallbackInfoReturnable<Boolean> cir) {
-        if (ScaSettings.skipCropLightCheck)
+        if (Settings.skipCropLightCheck)
             cir.setReturnValue(super.canSurvive(blockState, levelReader, blockPos));
     }
 
@@ -33,7 +33,7 @@ public abstract class CropBlockMixin extends BushBlock {
             slice = @Slice(from = @At(value = "HEAD"), to = @At(value = "TAIL")),
             constant = @Constant(intValue = 9))
     private int randomTick_getRawBrightness_redirect(int instance) {
-        if (ScaSettings.skipCropLightCheck)
+        if (Settings.skipCropLightCheck)
             return 0;
         return instance;
     }
