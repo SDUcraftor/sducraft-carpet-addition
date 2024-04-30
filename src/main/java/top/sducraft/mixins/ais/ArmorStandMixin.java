@@ -23,7 +23,7 @@ public abstract class ArmorStandMixin extends LivingEntity{
     //如果伤害来源为SHULKER_BULLET,防止此伤害
     @Inject(method = "hurt", at = @At(value = "HEAD"), cancellable = true)
     private void ShulkerBulletKillArmorStand(DamageSource damageSource, float f, CallbackInfoReturnable<Boolean> cir){
-     if (Settings.ShulkerBulletDoNotKillArmorStand){
+     if (Settings.armorStandIgnoreShulkerDamage){
          Entity entity;
          entity = damageSource.getDirectEntity();
          if (entity != null && entity.getType() == EntityType.SHULKER_BULLET) {

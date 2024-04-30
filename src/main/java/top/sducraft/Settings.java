@@ -12,5 +12,5 @@ public class Settings {
     @Rule(
             categories = {sdu}
     )
-    public static boolean ShulkerBulletDoNotKillArmorStand = false;
+    public static boolean armorStandIgnoreShulkerDamage = false;
 }
