@@ -13,4 +13,8 @@ public class Settings {
             categories = {sdu}
     )
     public static boolean armorStandIgnoreShulkerDamage = false;
+    @Rule(
+            categories = {sdu}
+    )
+    public static boolean leadBandBeeDisable = false;
 }

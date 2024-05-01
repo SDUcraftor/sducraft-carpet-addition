@@ -18,7 +18,7 @@
     ]
   },
   "mixins": [
-    "sdu-carpet.mixins.json",
+    "sdu-carpet.mixins.json"
   ],
   "depends": {
     "fabricloader": ">=${loader_version}",
