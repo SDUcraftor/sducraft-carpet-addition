@@ -6,7 +6,8 @@
   "mixins": [
     "ais.ArmorStandMixin",
     "sca.CropBlockMixin",
-    "lbd.LeadItemMixin"
+    "lbd.LeadItemMixin";
+    "bds.BlockBehaviorMinin"
   ],
   "client": [
   ],

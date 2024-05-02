@@ -4,6 +4,8 @@
   "carpet.rule.skipCropLightCheck.name": "作物跳过光照检测",
   "carpet.rule.armorStandIgnoreShulkerDamage.name": "禁止潜影贝导弹伤害盔甲架",
   "carpet.rule.armorStandIgnoreShulkerDamage.desc": "如果启用此选项，潜影贝导弹将不会对盔甲架造成伤害",
-  "carpet.rule.leadBandBeeDisable.name": "禁止栓绳栓蜜蜂",
-  "carpet.rule.leadBandBeeDisable.desc": "如果启用此选项，栓绳将不能连接蜜蜂"
+  "carpet.rule.leadBandBeeDisable.name": "禁止栓绳栓蜜蜂(暂不可用)",
+  "carpet.rule.leadBandBeeDisable.desc": "如果启用此选项，栓绳将不能连接蜜蜂",
+  "carpet.rule.BrittleDeepSlate.desc": "易碎深板岩",
+  "carpet.rule.BrittleDeepSlate.name": "易碎深板岩"
 }

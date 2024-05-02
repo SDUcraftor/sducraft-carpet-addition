@@ -17,4 +17,8 @@ public class Settings {
             categories = {sdu}
     )
     public static boolean leadBandBeeDisable = false;
+    @Rule(
+            categories = {sdu}
+    )
+    public static boolean BrittleDeepSlate = false;
 }
