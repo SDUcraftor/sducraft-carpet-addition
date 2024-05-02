@@ -1,6 +1,5 @@
 package top.sducraft.mixins.bds;
 
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.flag.FeatureElement;
@@ -23,11 +22,12 @@ public abstract class BlockBehaviorMixin implements FeatureElement {
 
     @Inject(method = "getDestroyProgress", at = @At("TAIL"), cancellable = true)
     public void getDestroyProgress(BlockState blockState, Player player, BlockGetter blockGetter, BlockPos blockPos, CallbackInfoReturnable<Float> cir) {
-        if (Settings.BrittleDeepSlate) {
+        if (Settings.brittleDeepSlate) {
             if (this.asBlock() == Blocks.DEEPSLATE) {
                 cir.setReturnValue(1.6F);
             }
         }
+
     }
 }
 

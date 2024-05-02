@@ -6,6 +6,6 @@
   "carpet.rule.armorStandIgnoreShulkerDamage.desc": "If enable, MobProjectile will not hurt ArmorStand.",
   "carpet.rule.leadBandBeeDisable.name": "ShulkerBullet can't hurt ArmorStand",
   "carpet.rule.leadBandBeeDisable.desc": "If enable, MobProjectile will not hurt ArmorStand.",
-  "carpet.rule.BrittleDeepSlate.desc": "Brittledeepslate",
-  "carpet.rule.BrittleDeepSlate.name": "Brittledeepslate"
+  "carpet.rule.brittleDeepSlate.name": "Brittledeepslate",
+  "carpet.rule.brittleDeepSlate.desc": "If enable,deepSlate's hardness will be change to 1.6."
 }
