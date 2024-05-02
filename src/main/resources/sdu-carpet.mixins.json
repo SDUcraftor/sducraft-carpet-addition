@@ -7,7 +7,7 @@
     "ais.ArmorStandMixin",
     "sca.CropBlockMixin",
     "lbd.LeadItemMixin";
-    "bds.BlockBehaviorMinin"
+    "bds.BlockBehaviorMixin"
   ],
   "client": [
   ],

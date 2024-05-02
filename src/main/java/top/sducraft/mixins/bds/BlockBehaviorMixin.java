@@ -16,20 +16,19 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import top.sducraft.Settings;
 
-@Mixin (BlockBehaviour.class)
-public abstract class BlockBehaviorMinin implements FeatureElement {
+@Mixin(BlockBehaviour.class)
+public abstract class BlockBehaviorMixin implements FeatureElement {
     @Shadow
-    public abstract Block getBlock();
-    @Inject(method = "getDestroyProgress", at = @At("TAIL"), cancellable = true)
+    protected abstract Block asBlock();
 
-         public void getDestroyProgress(BlockState blockState, Player player, BlockGetter blockGetter, BlockPos blockPos, CallbackInfoReturnable<Float> cir){
-        if(Settings.BrittleDeepSlate){
-            if(this.getBlock() == Blocks.DEEPSLATE) {
+    @Inject(method = "getDestroyProgress", at = @At("TAIL"), cancellable = true)
+    public void getDestroyProgress(BlockState blockState, Player player, BlockGetter blockGetter, BlockPos blockPos, CallbackInfoReturnable<Float> cir) {
+        if (Settings.BrittleDeepSlate) {
+            if (this.asBlock() == Blocks.DEEPSLATE) {
                 cir.setReturnValue(1.6F);
             }
         }
-
-        }
+    }
 }
 
 
