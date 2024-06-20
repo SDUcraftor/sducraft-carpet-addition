@@ -1,5 +1,0 @@
-{
-  "carpet.category.SCA": "SCA",
-  "carpet.rule.skipCropLightCheck.desc": "如果启用此选项，作物方块将不检查光照。",
-  "carpet.rule.skipCropLightCheck.name": "作物跳过光照检测"
-}

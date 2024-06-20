@@ -1,4 +1,4 @@
-package top.sducraft.sca;
+package top.sducraft;
 
 import carpet.CarpetExtension;
 import carpet.CarpetServer;
@@ -10,12 +10,12 @@ import java.util.Map;
 
 import static carpet.utils.Translations.getTranslationFromResourcePath;
 
-public class ScaExtension implements CarpetExtension, ModInitializer {
-    public static String MOD_ID = "SCA";
+public class Extension implements CarpetExtension, ModInitializer {
+    public static String MOD_ID = "SDU-carpet";
     public final static Logger LOGGER = LogManager.getLogger(MOD_ID);
 
     static {
-        CarpetServer.manageExtension(new ScaExtension());
+        CarpetServer.manageExtension(new Extension());
     }
 
     @Override
@@ -24,15 +24,15 @@ public class ScaExtension implements CarpetExtension, ModInitializer {
 
     @Override
     public void onGameStarted() {
-        CarpetServer.settingsManager.parseSettingsClass(ScaSettings.class);
-        LOGGER.info("[SCA] Mod Loaded.");
+        CarpetServer.settingsManager.parseSettingsClass(Settings.class);
+        LOGGER.info("[SDU] Mod Loaded.");
     }
 
     @Override
     public Map<String, String> canHasTranslations(String lang) {
-        Map<String, String> langdict = getTranslationFromResourcePath(String.format("assets/sca/lang/%s.json", lang));
+        Map<String, String> langdict = getTranslationFromResourcePath(String.format("assets/sdu/lang/%s.json", lang));
         if (langdict == null)
-            langdict = getTranslationFromResourcePath("assets/sca/lang/en_us.json");
+            langdict = getTranslationFromResourcePath("assets/sdu/lang/en_us.json");
         return langdict;
     }
 }

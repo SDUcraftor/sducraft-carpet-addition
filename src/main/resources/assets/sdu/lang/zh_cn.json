@@ -1,0 +1,12 @@
+{
+  "carpet.category.SDU-carpet": "SDU-carpet",
+  "carpet.rule.skipCropLightCheck.desc": "如果启用此选项，作物方块将不检查光照。",
+  "carpet.rule.skipCropLightCheck.name": "作物跳过光照检测",
+  "carpet.rule.armorStandIgnoreShulkerDamage.name": "禁止潜影贝导弹伤害盔甲架",
+  "carpet.rule.armorStandIgnoreShulkerDamage.desc": "如果启用此选项，潜影贝导弹将不会对盔甲架造成伤害",
+  "carpet.rule.leadBandBeeDisable.name": "禁止栓绳栓蜜蜂(暂不可用)",
+  "carpet.rule.leadBandBeeDisable.desc": "如果启用此选项，栓绳将不能连接蜜蜂",
+  "carpet.rule.brittleDeepSlate.name": "易碎深板岩",
+  "carpet.rule.brittleDeepSlate.desc": "如果启用此选项，深板岩的硬度将变为1.6，可以被急迫2效率5下界合金镐秒破"
+
+}
