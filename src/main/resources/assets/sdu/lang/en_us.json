@@ -2,10 +2,10 @@
   "carpet.category.SDU-carpet": "SDU-carpet",
   "carpet.rule.skipCropLightCheck.name": "Skip Crop Light Check",
   "carpet.rule.skipCropLightCheck.desc": "If enable, crop blocks will not check the light.",
-  "carpet.rule.armorStandIgnoreShulkerDamage.name": "ShulkerBullet can't hurt ArmorStand",
-  "carpet.rule.armorStandIgnoreShulkerDamage.desc": "If enable, MobProjectile will not hurt ArmorStand.",
-  "carpet.rule.leadBandBeeDisable.name": "ShulkerBullet can't hurt ArmorStand",
-  "carpet.rule.leadBandBeeDisable.desc": "If enable, MobProjectile will not hurt ArmorStand.",
   "carpet.rule.brittleDeepSlate.name": "Brittledeepslate",
-  "carpet.rule.brittleDeepSlate.desc": "If enable,deepSlate's hardness will be change to 1.6."
+  "carpet.rule.brittleDeepSlate.desc": "If enable,deepSlate's hardness will be change to 1.6.",
+  "carpet.rule.noFallingBlock.name": "NoFallingBlock",
+  "carpet.rule.noFallingBlock.desc": "If enable,Sand will not turn into fallingblocks.",
+  "carpet.rule.notebookIgnoreupdate.name": "NotebookIgnoreupdate",
+  "carpet.rule.notebookIgnoreupdate.desc": "If enable,the instruments of the NoteBlock will not change with the block below."
 }

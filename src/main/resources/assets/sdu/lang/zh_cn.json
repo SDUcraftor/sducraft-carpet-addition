@@ -2,11 +2,11 @@
   "carpet.category.SDU-carpet": "SDU-carpet",
   "carpet.rule.skipCropLightCheck.desc": "如果启用此选项，作物方块将不检查光照。",
   "carpet.rule.skipCropLightCheck.name": "作物跳过光照检测",
-  "carpet.rule.armorStandIgnoreShulkerDamage.name": "禁止潜影贝导弹伤害盔甲架",
-  "carpet.rule.armorStandIgnoreShulkerDamage.desc": "如果启用此选项，潜影贝导弹将不会对盔甲架造成伤害",
-  "carpet.rule.leadBandBeeDisable.name": "禁止栓绳栓蜜蜂(暂不可用)",
-  "carpet.rule.leadBandBeeDisable.desc": "如果启用此选项，栓绳将不能连接蜜蜂",
   "carpet.rule.brittleDeepSlate.name": "易碎深板岩",
-  "carpet.rule.brittleDeepSlate.desc": "如果启用此选项，深板岩的硬度将变为1.6，可以被急迫2效率5下界合金镐秒破"
+  "carpet.rule.brittleDeepSlate.desc": "如果启用此选项，深板岩的硬度将变为1.6，可以被急迫2效率5下界合金镐秒破",
+  "carpet.rule.noFallingBlock.name": "禁止生成掉落方块",
+  "carpet.rule.noFallingBlock.desc": "如果启用此选项,沙子,铁砧等方块将不会变为下落形式",
+  "carpet.rule.notebookIgnoreupdate.name": "音符盒乐器忽略更新",
+  "carpet.rule.notebookIgnoreupdate.desc": "如果启用此选项,音符盒的乐器将不会随着下方方块变化而变化"
 
 }
