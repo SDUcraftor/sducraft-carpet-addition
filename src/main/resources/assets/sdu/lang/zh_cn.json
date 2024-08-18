@@ -1,12 +1,15 @@
 {
   "carpet.category.SDU-carpet": "SDU-carpet",
-  "carpet.rule.skipCropLightCheck.desc": "如果启用此选项，作物方块将不检查光照。",
+  "carpet.rule.skipCropLightCheck.desc": "如果启用此选项，作物方块将不检查光照.",
   "carpet.rule.skipCropLightCheck.name": "作物跳过光照检测",
   "carpet.rule.brittleDeepSlate.name": "易碎深板岩",
-  "carpet.rule.brittleDeepSlate.desc": "如果启用此选项，深板岩的硬度将变为1.6，可以被急迫2效率5下界合金镐秒破",
+  "carpet.rule.brittleDeepSlate.desc": "如果启用此选项，深板岩的硬度将变为1.6，可以被急迫2效率5下界合金镐秒破.",
   "carpet.rule.noFallingBlock.name": "禁止生成掉落方块",
-  "carpet.rule.noFallingBlock.desc": "如果启用此选项,沙子,铁砧等方块将不会变为下落形式",
+  "carpet.rule.noFallingBlock.desc": "如果启用此选项,沙子,铁砧等方块将不会变为下落形式.",
   "carpet.rule.notebookIgnoreupdate.name": "音符盒乐器忽略更新",
-  "carpet.rule.notebookIgnoreupdate.desc": "如果启用此选项,音符盒的乐器将不会随着下方方块变化而变化"
-
+  "carpet.rule.notebookIgnoreupdate.desc": "如果启用此选项,音符盒的乐器将不会随着下方方块变化而变化.",
+  "carpet.rule.saplingPlaceIgnoreCondition.name": "坚韧树苗",
+  "carpet.rule.saplingPlaceIgnoreCondition.desc": "如果启用此选项,树苗放置忽略条件检查.",
+  "carpet.rule.disablenoteboxinteraction.name": "禁用音符盒交互",
+  "carpet.rule.disablenoteboxinteraction.desc": "如果启用此选项,禁用音符盒方块交互."
 }

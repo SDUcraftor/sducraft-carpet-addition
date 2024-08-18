@@ -7,5 +7,9 @@
   "carpet.rule.noFallingBlock.name": "NoFallingBlock",
   "carpet.rule.noFallingBlock.desc": "If enable,Sand will not turn into fallingblocks.",
   "carpet.rule.notebookIgnoreupdate.name": "NotebookIgnoreupdate",
-  "carpet.rule.notebookIgnoreupdate.desc": "If enable,the instruments of the NoteBlock will not change with the block below."
+  "carpet.rule.notebookIgnoreupdate.desc": "If enable,the instruments of the NoteBlock will not change with the block below.",
+  "carpet.rule.saplingPlaceIgnoreCondition.name": "ToughSaplings",
+  "carpet.rule.saplingPlaceIgnoreCondition.desc": "If enable,sapling placement ignores condition check.",
+  "carpet.rule.disablenoteboxinteraction.name": "DisableNoteboxInteraction",
+  "carpet.rule.disablenoteboxinteraction.desc": "If enable,unable to interact with the note box."
 }
