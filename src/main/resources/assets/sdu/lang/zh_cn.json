@@ -8,8 +8,8 @@
   "carpet.rule.noFallingBlock.desc": "如果启用此选项,沙子,铁砧等方块将不会变为下落形式.",
   "carpet.rule.notebookIgnoreupdate.name": "音符盒乐器忽略更新",
   "carpet.rule.notebookIgnoreupdate.desc": "如果启用此选项,音符盒的乐器将不会随着下方方块变化而变化.",
-  "carpet.rule.saplingPlaceIgnoreCondition.name": "坚韧树苗",
-  "carpet.rule.saplingPlaceIgnoreCondition.desc": "如果启用此选项,树苗放置忽略条件检查.",
+  "carpet.rule.blockPlaceIgnoreCondition.name": "方块放置忽略条件",
+  "carpet.rule.blockPlaceIgnoreCondition.desc": "如果启用此选项,方块放置忽略条件检查.",
   "carpet.rule.disablenoteboxinteraction.name": "禁用音符盒交互",
   "carpet.rule.disablenoteboxinteraction.desc": "如果启用此选项,禁用音符盒方块交互."
 }

@@ -26,8 +26,8 @@ public abstract class NoteBlockMixin extends Block {
     }
 
 //音符盒乐器不改变
-@Inject(method = "updateShape",at=@At("HEAD"), cancellable = true)
-protected void updateShape(BlockState blockState, Direction direction, BlockState blockState2, LevelAccessor levelAccessor, BlockPos blockPos, BlockPos blockPos2, CallbackInfoReturnable<BlockState> cir) {
+    @Inject(method = "updateShape",at=@At("HEAD"), cancellable = true)
+    protected void updateShape(BlockState blockState, Direction direction, BlockState blockState2, LevelAccessor levelAccessor, BlockPos blockPos, BlockPos blockPos2, CallbackInfoReturnable<BlockState> cir) {
     if(Settings.notebookIgnoreupdate) {
         boolean isVerticalAxis = direction.getAxis() == Direction.Axis.Y;
         if (isVerticalAxis) {
@@ -41,13 +41,13 @@ protected void updateShape(BlockState blockState, Direction direction, BlockStat
 }
 
 //禁用音符盒方块交互
-@Inject(method = "useItemOn",at=@At("HEAD"), cancellable = true)
+    @Inject(method = "useItemOn",at=@At("HEAD"), cancellable = true)
     protected void useItemOn(ItemStack itemStack, BlockState blockState, Level level, BlockPos blockPos, Player player, InteractionHand interactionHand, BlockHitResult blockHitResult, CallbackInfoReturnable<ItemInteractionResult> cir){
     if(Settings.disablenoteboxinteraction) {
         cir.setReturnValue(ItemInteractionResult.SUCCESS);
     }
     }
-@Inject(method = "useWithoutItem",at=@At("HEAD"), cancellable = true)
+    @Inject(method = "useWithoutItem",at=@At("HEAD"), cancellable = true)
     protected void useWithoutItem(BlockState blockState, Level level, BlockPos blockPos, Player player, BlockHitResult blockHitResult, CallbackInfoReturnable<InteractionResult> cir){
     if(Settings.disablenoteboxinteraction) {
         cir.setReturnValue(ItemInteractionResult.SUCCESS.result());

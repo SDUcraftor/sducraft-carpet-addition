@@ -20,7 +20,7 @@ public class Settings {
     public static boolean noFallingBlock = false;
 
     @Rule(categories = {sdu,blocksdu})
-    public static boolean saplingPlaceIgnoreCondition = false;
+    public static boolean blockPlaceIgnoreCondition = false;
 
     @Rule(categories = {sdu,blocksdu})
     public static boolean disablenoteboxinteraction = false;

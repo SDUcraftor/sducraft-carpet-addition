@@ -6,7 +6,11 @@
   "mixins": [
     "block_sdu.FallingBlockMixin",
     "block_sdu.NoteBlockMixin",
+    "block_sdu.BlockPlaceIgnoreCondition.BlockBehaviourMixin",
+    "block_sdu.BlockPlaceIgnoreCondition.BlockMixin",
     "block_sdu.BlockPlaceIgnoreCondition.BushBlockMixin",
+    "block_sdu.BlockPlaceIgnoreCondition.FaceAttachedHorizontalDirectionalBlockMixin",
+    "block_sdu.BlockPlaceIgnoreCondition.MushroomBlockMixin",
     "SDUcraft3RD.BlockBehaviorMixin",
     "SDUcraft3RD.CropBlockMixin"
   ],
