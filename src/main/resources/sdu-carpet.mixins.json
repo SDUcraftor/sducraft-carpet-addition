@@ -6,10 +6,14 @@
   "mixins": [
     "block_sdu.FallingBlockMixin",
     "block_sdu.NoteBlockMixin",
+    "block_sdu.PlayerMixin",
     "block_sdu.BlockPlaceIgnoreCondition.BlockBehaviourMixin",
     "block_sdu.BlockPlaceIgnoreCondition.BlockMixin",
     "block_sdu.BlockPlaceIgnoreCondition.BushBlockMixin",
     "block_sdu.BlockPlaceIgnoreCondition.FaceAttachedHorizontalDirectionalBlockMixin",
+    "block_sdu.BlockPlaceIgnoreCondition.GrowingPlantBlockMixin",
+    "block_sdu.BlockPlaceIgnoreCondition.KelpBlockMixin",
+    "block_sdu.BlockPlaceIgnoreCondition.KelpPlantBlockMixin",
     "block_sdu.BlockPlaceIgnoreCondition.MushroomBlockMixin",
     "SDUcraft3RD.BlockBehaviorMixin",
     "SDUcraft3RD.CropBlockMixin"

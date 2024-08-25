@@ -11,5 +11,7 @@
   "carpet.rule.blockPlaceIgnoreCondition.name": "方块放置忽略条件",
   "carpet.rule.blockPlaceIgnoreCondition.desc": "如果启用此选项,方块放置忽略条件检查.",
   "carpet.rule.disablenoteboxinteraction.name": "禁用音符盒交互",
-  "carpet.rule.disablenoteboxinteraction.desc": "如果启用此选项,禁用音符盒方块交互."
+  "carpet.rule.disablenoteboxinteraction.desc": "如果启用此选项,禁用音符盒方块交互.",
+  "carpet.rule.itempickupdelay.name": "丢弃物品拾取冷却",
+  "carpet.rule.itempickupdelay.desc": "如果改变此选项,玩家丢出的物品实体的拾取冷却将被设置为此选项值,设置为32767以禁用物品被拾取"
 }

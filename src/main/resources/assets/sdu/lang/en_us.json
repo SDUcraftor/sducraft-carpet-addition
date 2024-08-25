@@ -11,5 +11,7 @@
   "carpet.rule.blockPlaceIgnoreCondition.name": "BlockPlaceIgnoreCondition",
   "carpet.rule.blockPlaceIgnoreCondition.desc": "If enable,block placement ignores condition check.",
   "carpet.rule.disablenoteboxinteraction.name": "DisableNoteboxInteraction",
-  "carpet.rule.disablenoteboxinteraction.desc": "If enable,unable to interact with the note box."
+  "carpet.rule.disablenoteboxinteraction.desc": "If enable,unable to interact with the note box.",
+  "carpet.rule.itempickupdelay.name": "Pickup delay for discarded items",
+  "carpet.rule.itempickupdelay.desc": "If this option is changed, the pickup delay of the item entity thrown by the player will be set to this option value, set to 32767 to disable item pickup."
 }

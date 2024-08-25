@@ -31,10 +31,8 @@ public abstract class NoteBlockMixin extends Block {
     if(Settings.notebookIgnoreupdate) {
         boolean isVerticalAxis = direction.getAxis() == Direction.Axis.Y;
         if (isVerticalAxis) {
-            // 在 Y 轴方向时不改变 Instrument 属性
             cir.setReturnValue(blockState);
         } else {
-            // 其他方向时调用原有的方法
             cir.setReturnValue(super.updateShape(blockState, direction, blockState2, levelAccessor, blockPos, blockPos2));
         }
     }
