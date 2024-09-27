@@ -1,4 +1,4 @@
-package top.sducraft.mixins.bds;
+package top.sducraft.mixins.rule.brittleDeepSlate;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.entity.player.Player;
@@ -13,7 +13,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
-import top.sducraft.Settings;
+import top.sducraft.SDUcraftCarpetSettings;
 
 @Mixin(BlockBehaviour.class)
 public abstract class BlockBehaviorMixin implements FeatureElement {
@@ -22,7 +22,7 @@ public abstract class BlockBehaviorMixin implements FeatureElement {
 
     @Inject(method = "getDestroyProgress", at = @At("TAIL"), cancellable = true)
     public void getDestroyProgress(BlockState blockState, Player player, BlockGetter blockGetter, BlockPos blockPos, CallbackInfoReturnable<Float> cir) {
-        if (Settings.brittleDeepSlate) {
+        if (SDUcraftCarpetSettings.brittleDeepSlate) {
             if (this.asBlock() == Blocks.DEEPSLATE) {
                 cir.setReturnValue(1.6F);
             }
