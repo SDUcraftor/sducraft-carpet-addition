@@ -7,6 +7,11 @@
   "carpet.rule.leadBandBeeDisable.name": "禁止栓绳栓蜜蜂(暂不可用)",
   "carpet.rule.leadBandBeeDisable.desc": "如果启用此选项，栓绳将不能连接蜜蜂",
   "carpet.rule.brittleDeepSlate.name": "易碎深板岩",
-  "carpet.rule.brittleDeepSlate.desc": "如果启用此选项，深板岩的硬度将变为1.6，可以被急迫2效率5下界合金镐秒破"
-
+  "carpet.rule.brittleDeepSlate.desc": "如果启用此选项，深板岩的硬度将变为1.6，可以被急迫2效率5下界合金镐秒破",
+  "carpet.rule.tickRateChangedMessage.name": "游戏速度改变提示",
+  "carpet.rule.tickRateChangedMessage.desc": "如果启用此选项，游戏速度改变时将允许玩家留言",
+  "carpet.rule.easyFakePeace.name": "简易伪和平开关",
+  "carpet.rule.easyFakePeace.desc": "如果启用此选项，将允许玩家通过/fakepeace指令操控伪和平开关",
+  "carpet.rule.itempickupdelay.name": "丢弃物品拾取冷却",
+  "carpet.rule.itempickupdelay.desc": "如果改变此选项,玩家丢出的物品实体的拾取冷却将被设置为此选项值,设置为32767以禁用物品被拾取"
 }

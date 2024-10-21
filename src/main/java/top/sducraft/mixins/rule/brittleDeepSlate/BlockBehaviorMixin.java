@@ -15,22 +15,21 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 import top.sducraft.SDUcraftCarpetSettings;
 
-@Mixin(BlockBehaviour.class)
+@Mixin(BlockBehaviour.BlockStateBase.class)
 public abstract class BlockBehaviorMixin implements FeatureElement {
-    @Shadow
-    protected abstract Block asBlock();
 
-    @Inject(method = "getDestroyProgress", at = @At("TAIL"), cancellable = true)
-    public void getDestroyProgress(BlockState blockState, Player player, BlockGetter blockGetter, BlockPos blockPos, CallbackInfoReturnable<Float> cir) {
+    @Shadow
+    public abstract boolean is(Block block);
+
+    @Inject(method = "getDestroySpeed", at = @At("TAIL"), cancellable = true)
+    public void getDestroySpeed(BlockGetter blockGetter, BlockPos blockPos, CallbackInfoReturnable<Float> cir) {
         if (SDUcraftCarpetSettings.brittleDeepSlate) {
-            if (this.asBlock() == Blocks.DEEPSLATE) {
+            if (this.is(Blocks.DEEPSLATE)) {
                 cir.setReturnValue(1.6F);
             }
         }
 
     }
 }
-
-
 
 

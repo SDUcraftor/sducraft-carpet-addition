@@ -1,0 +1,33 @@
+package top.sducraft.commands.fakePeaceCommand;
+
+import com.mojang.brigadier.CommandDispatcher;
+import com.mojang.brigadier.arguments.BoolArgumentType;
+import net.minecraft.commands.CommandSourceStack;
+import net.minecraft.commands.Commands;
+import net.minecraft.commands.arguments.DimensionArgument;
+import top.sducraft.SDUcraftCarpetSettings;
+import top.sducraft.helpers.commands.easyFakePeace.easyFakePeaceCommandHelper;
+import java.util.Objects;
+
+public class fakePeaceCommand {
+    public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
+        dispatcher.register(Commands.literal("fakepeace")
+                .requires(c -> SDUcraftCarpetSettings.easyFakePeace)
+                .executes(context -> {
+                    CommandSourceStack source = context.getSource();
+                    easyFakePeaceCommandHelper.showFakePeaceStatus(Objects.requireNonNull(source.getPlayer()));
+                    return 1;
+                })
+                .then(Commands.argument("dimension", DimensionArgument.dimension())
+                        .then(Commands.argument("state", BoolArgumentType.bool())
+                                .executes(context -> easyFakePeaceCommandHelper.setFakePeaceState(
+                                        context.getSource(),
+                                        DimensionArgument.getDimension(context, "dimension"),
+                                        BoolArgumentType.getBool(context, "state")
+                                )))));
+
+    }
+}
+
+
+

@@ -18,7 +18,6 @@
       "top.sducraft.SDUcraftCarpetAdditionMod"
     ]
   },
-  "accessWidener": "sdu-carpet.accesswidener",
   "mixins": [
     "sdu-carpet.mixins.json"
   ],
