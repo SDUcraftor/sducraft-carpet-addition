@@ -19,7 +19,6 @@ import static carpet.utils.Translations.getTranslationFromResourcePath;
 import static top.sducraft.helpers.commands.easyFakePeace.easyFakePeaceCommandHelper.showFakePeaceStatus;
 import static top.sducraft.helpers.commands.tickRateChangeMessage.tickRateChangeMessageCommandHelper.sendTickRateChangeMessage;
 import static top.sducraft.helpers.rule.joinMessage.joinMessage.showJoinMessage;
-import static top.sducraft.helpers.rule.joinMessage.tips.showtips;
 
 
 public class SDUcraftCarpetAdditionMod implements CarpetExtension, ModInitializer {

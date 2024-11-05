@@ -16,7 +16,6 @@ import top.sducraft.SDUcraftCarpetSettings;
 
 public abstract class ArmorStandMixin extends LivingEntity{
 
-
     protected ArmorStandMixin(EntityType<? extends LivingEntity> entityType, Level level) {
         super(entityType, level);
     }

@@ -1,11 +1,11 @@
 plugins {
     id 'fabric-loom' version '1.5-SNAPSHOT'
     id 'maven-publish'
+    id 'org.jetbrains.kotlin.jvm'
 }
 
 version = project.mod_version
 group = project.maven_group
-
 
 repositories {
     // Add repositories to retrieve artifacts from in here.
@@ -19,6 +19,7 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    mavenCentral()
 }
 
 dependencies {
@@ -30,7 +31,9 @@ dependencies {
         // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation "curse.maven:carpet-349239:${project.carpet_core_version}"
-    }
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+}
 
 processResources {
     inputs.property "version", project.version
@@ -90,4 +93,7 @@ publishing {
         // The repositories here will be used for publishing your artifact, not for
         // retrieving dependencies.
     }
+}
+kotlin {
+    jvmToolchain(21)
 }

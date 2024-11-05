@@ -33,13 +33,18 @@ public class SDUcraftCarpetSettings {
             validators = {NotifyPlayers.class})
     public static boolean easyFakePeace = false;
 
+    @Rule(  categories = {sdu},
+            options = {"true", "false"},
+            validators = {NotifyPlayers.class})
+    public static boolean easyCommand = false;
+
     @Rule(
             validators = Validators.NonNegativeNumber.class,
             options = {"0", "40", "80", "32767"},
             strict = false,
             categories = {sdu}
     )
-    public static int itempickupdelay = 40;
+    public static int itempickupDelay = 40;
 
     private static class NotifyPlayers extends Validator<Boolean> {
         @Override

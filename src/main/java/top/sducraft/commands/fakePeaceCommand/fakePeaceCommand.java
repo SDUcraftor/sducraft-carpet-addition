@@ -9,13 +9,15 @@ import top.sducraft.SDUcraftCarpetSettings;
 import top.sducraft.helpers.commands.easyFakePeace.easyFakePeaceCommandHelper;
 import java.util.Objects;
 
+import static top.sducraft.helpers.commands.easyFakePeace.easyFakePeaceCommandHelper.showFakePeaceStatus;
+
 public class fakePeaceCommand {
     public static void register(CommandDispatcher<CommandSourceStack> dispatcher) {
         dispatcher.register(Commands.literal("fakepeace")
                 .requires(c -> SDUcraftCarpetSettings.easyFakePeace)
                 .executes(context -> {
                     CommandSourceStack source = context.getSource();
-                    easyFakePeaceCommandHelper.showFakePeaceStatus(Objects.requireNonNull(source.getPlayer()));
+                    showFakePeaceStatus(Objects.requireNonNull(source.getPlayer()));
                     return 1;
                 })
                 .then(Commands.argument("dimension", DimensionArgument.dimension())

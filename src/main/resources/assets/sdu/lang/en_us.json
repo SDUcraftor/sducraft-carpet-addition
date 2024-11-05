@@ -12,6 +12,8 @@
   "carpet.rule.tickRateChangedMessage.desc": "If enable,players will be allowed to leave messages when the game speed changes.",
   "carpet.rule.easyFakePeace.name": "Simple fakepeace switch",
   "carpet.rule.easyFakePeace.desc": "If enable,players will be allowed to manipulate the fakepeace switch via/fakepeace command.",
-  "carpet.rule.itempickupdelay.name": "Pickup delay for discarded items",
-  "carpet.rule.itempickupdelay.desc": "If this option is changed, the pickup delay of the item entity thrown by the player will be set to this option value, set to 32767 to disable item pickup."
+  "carpet.rule.itempickupDelay.name": "Pickup delay for discarded items",
+  "carpet.rule.itempickupDelay.desc": "If this option is changed, the pickup delay of the item entity thrown by the player will be set to this option value, set to 32767 to disable item pickup.",
+  "carpet.rule.easyCommand.name": "easy command",
+  "carpet.rule.easyCommand.desc": "easy command"
 }

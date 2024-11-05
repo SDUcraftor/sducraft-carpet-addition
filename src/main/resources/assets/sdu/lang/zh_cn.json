@@ -12,6 +12,8 @@
   "carpet.rule.tickRateChangedMessage.desc": "如果启用此选项，游戏速度改变时将允许玩家留言",
   "carpet.rule.easyFakePeace.name": "简易伪和平开关",
   "carpet.rule.easyFakePeace.desc": "如果启用此选项，将允许玩家通过/fakepeace指令操控伪和平开关",
-  "carpet.rule.itempickupdelay.name": "丢弃物品拾取冷却",
-  "carpet.rule.itempickupdelay.desc": "如果改变此选项,玩家丢出的物品实体的拾取冷却将被设置为此选项值,设置为32767以禁用物品被拾取"
+  "carpet.rule.itempickupDelay.name": "丢弃物品拾取冷却",
+  "carpet.rule.itempickupDelay.desc": "如果改变此选项,玩家丢出的物品实体的拾取冷却将被设置为此选项值,设置为32767以禁用物品被拾取",
+  "carpet.rule.easyCommand.name": "easy command",
+  "carpet.rule.easyCommand.desc": "easy command"
 }
