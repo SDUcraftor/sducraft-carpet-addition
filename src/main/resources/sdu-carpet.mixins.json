@@ -6,10 +6,12 @@
   "mixins": [
     "rule.armorStandIgnoreShulkerDamage.ArmorStandMixin",
     "rule.brittleDeepSlate.BlockBehaviorMixin",
+    "rule.disableNetherPortal.entityMIxin",
     "rule.easyFakePeace.MinecraftServerMixin",
     "rule.skipCropLightCheck.CropBlockMixin",
     "rule.tickRateChangedMessage.MinecraftServerMixin",
-    "rule.tickRateChangedMessage.ServerTickRateManagerMixin"
+    "rule.tickRateChangedMessage.ServerTickRateManagerMixin",
+    "rule.tntTeleportThroughNetherPortal.primedTntMixin"
   ],
   "client": [
   ],

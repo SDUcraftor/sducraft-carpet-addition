@@ -16,12 +16,8 @@ public class SDUcraftCarpetSettings {
     @Rule(categories = {sdu})
     public static boolean armorStandIgnoreShulkerDamage = false;
 
-
     @Rule(categories = {sdu})
     public static boolean brittleDeepSlate = false;
-
-//    @Rule(categories = {sdu})
-//    public static boolean tickRateChangedMessage = false;
 
     @Rule(  categories = {sdu},
             options = {"true", "false"},
@@ -45,6 +41,12 @@ public class SDUcraftCarpetSettings {
             categories = {sdu}
     )
     public static int itempickupDelay = 40;
+
+    @Rule(categories = {sdu})
+    public static boolean tntTeleportThroughNetherPortal =false;
+
+    @Rule(categories = {sdu})
+    public static boolean disableNetherPortal = false;
 
     private static class NotifyPlayers extends Validator<Boolean> {
         @Override

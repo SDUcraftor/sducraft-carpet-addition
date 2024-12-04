@@ -48,7 +48,7 @@ public class fakePeaceHelper {
 
     public static void onServerTick(MinecraftServer server) {
         tickCounter++;
-        if (tickCounter >= 40) {
+        if (tickCounter >= 1000) {
             tickCounter = 0;
             loadChunkOnInitialize(server);
         }

@@ -3,8 +3,6 @@ package top.sducraft.helpers.commands.easyCommand;
 import net.minecraft.network.chat.Component;
 import top.sducraft.config.rule.easyCommandConfig;
 import top.sducraft.util.massageComponentCreate;
-
-import java.awt.*;
 import java.util.Comparator;
 
 public class test {

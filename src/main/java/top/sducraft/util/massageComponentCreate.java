@@ -12,7 +12,6 @@ public class massageComponentCreate {
     public static Component createDescriptionClickComponent(String label, String url, @Nullable String hoverText, @Nullable String tips) {
         Component description = Component.literal(label)
                 .withStyle(Style.EMPTY
-
                         .withClickEvent(new ClickEvent(ClickEvent.Action.OPEN_URL, url))
                         .withColor(ChatFormatting.GRAY));
         if (hoverText != null) {
