@@ -48,6 +48,14 @@ public class SDUcraftCarpetSettings {
     @Rule(categories = {sdu})
     public static boolean disableNetherPortal = false;
 
+    @Rule(
+            validators = Validators.NonNegativeNumber.class,
+            options = {"0", "300", "1000"},
+            strict = false,
+            categories = {sdu}
+    )
+    public static int netherPortalCooldown = 300;
+
     private static class NotifyPlayers extends Validator<Boolean> {
         @Override
         public Boolean validate(CommandSourceStack source, CarpetRule<Boolean> changingRule, Boolean newValue, String userInput) {

@@ -7,7 +7,7 @@ import net.minecraft.world.level.ChunkPos;
 import net.minecraft.world.level.Level;
 import top.sducraft.SDUcraftCarpetSettings;
 import top.sducraft.config.rule.easyfakePeaceConfig;
-import static top.sducraft.helpers.rule.chunkLoadHelper.loadChunk.addfakepeaceticket;
+import static top.sducraft.helpers.rule.chunkLoadHelper.RegistTicket.addfakepeaceticket;
 
 public class fakePeaceHelper {
     private static int tickCounter = 0;

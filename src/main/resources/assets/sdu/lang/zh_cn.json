@@ -14,10 +14,12 @@
   "carpet.rule.easyFakePeace.desc": "如果启用此选项，将允许玩家通过/fakepeace指令操控伪和平开关",
   "carpet.rule.itempickupDelay.name": "丢弃物品拾取冷却",
   "carpet.rule.itempickupDelay.desc": "如果改变此选项,玩家丢出的物品实体的拾取冷却将被设置为此选项值,设置为32767以禁用物品被拾取",
-  "carpet.rule.easyCommand.name": "easy command",
-  "carpet.rule.easyCommand.desc": "easy command",
+  "carpet.rule.easyCommand.name": "简易命令系统",
+  "carpet.rule.easyCommand.desc": "开启专为SDUcraft三周目生存服设计的简易命令",
   "carpet.rule.tntTeleportThroughNetherPortal.name": "允许被点燃的TNT穿过地狱门",
   "carpet.rule.tntTeleportThroughNetherPortal.desc": "如果启用此选项,被点燃的TNT将可以通过地狱门传送",
   "carpet.rule.disableNetherPortal.name": "禁用地狱门",
-  "carpet.rule.disableNetherPortal.desc": "如果启用此选项，实体将不能通过地狱门传送"
+  "carpet.rule.disableNetherPortal.desc": "如果启用此选项，实体将不能通过地狱门传送",
+  "carpet.rule.netherPortalCooldown.name": "地狱门冷却时间",
+  "carpet.rule.netherPortalCooldown.desc": "如果改变此选项,玩家以外实体通过地狱门的冷却时间将被设置为此选项值"
 }

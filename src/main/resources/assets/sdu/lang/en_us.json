@@ -19,5 +19,7 @@
   "carpet.rule.tntTeleportThroughNetherPortal.name": "TNT teleport through nether portal",
   "carpet.rule.tntTeleportThroughNetherPortal.desc": "If enable,Primed TNT can teleport through a nether portal",
   "carpet.rule.disableNetherPortal.name": "Disable Nether Portal",
-  "carpet.rule.disableNetherPortal.desc": "If enable,Entity can not teleport through a nether portal"
+  "carpet.rule.disableNetherPortal.desc": "If enable,Entity can not teleport through a nether portal",
+  "carpet.rule.netherPortalCooldown.name": "NetherPortalCooldown",
+  "carpet.rule.netherPortalCooldown.desc": "If this option is changed, the cooldown of the NetherPortal the player will be set to this option"
 }

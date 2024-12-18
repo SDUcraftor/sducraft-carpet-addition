@@ -17,7 +17,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import top.sducraft.SDUcraftCarpetSettings;
 import top.sducraft.config.rule.easyfakePeaceConfig;
 import static top.sducraft.config.rule.easyfakePeaceConfig.getFakePeaceStates;
-import static top.sducraft.helpers.rule.chunkLoadHelper.loadChunk.addfakepeaceticket;
+import static top.sducraft.helpers.rule.chunkLoadHelper.RegistTicket.addfakepeaceticket;
 
 public class easyFakePeaceCommandHelper {
 
