@@ -1,12 +1,14 @@
 {
   "schemaVersion": 1,
-  "id": "sca",
+  "id": "sducraft-carpet-addition",
   "version": "${version}",
   "name": "sducraft-carpet-addition",
   "description": "A carpet addition for SDUCraft",
   "authors": [
-    "Forgot-Dream"
+    "Forgot-Dream",
+    "xhbsh"
   ],
+  "accessWidener": "sdu-carpet.accesswidener",
   "contact": {
     "repo": "https://github.com/Forgot-Dream/sducraft-carpet-addition"
   },
@@ -14,7 +16,7 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-      "top.sducraft.Extension"
+      "top.sducraft.SDUcraftCarpetAdditionMod"
     ]
   },
   "mixins": [

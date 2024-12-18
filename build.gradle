@@ -1,6 +1,11 @@
 plugins {
     id 'fabric-loom' version '1.5-SNAPSHOT'
     id 'maven-publish'
+    id 'org.jetbrains.kotlin.jvm'
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/sdu-carpet.accesswidener")
 }
 
 version = project.mod_version
@@ -18,6 +23,14 @@ repositories {
             includeGroup "curse.maven"
         }
     }
+    maven{
+        name("Modrinth Maven")
+        url("https://api.modrinth.com/maven")
+        content{
+            includeGroup("modrinth.maven")
+        }
+    }
+    mavenCentral()
 }
 
 dependencies {
@@ -29,7 +42,8 @@ dependencies {
         // Fabric API. This is technically optional, but you probably want it anyway.
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
     modImplementation "curse.maven:carpet-349239:${project.carpet_core_version}"
-    }
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
+}
 
 processResources {
     inputs.property "version", project.version
@@ -89,4 +103,7 @@ publishing {
         // The repositories here will be used for publishing your artifact, not for
         // retrieving dependencies.
     }
+}
+kotlin {
+    jvmToolchain(21)
 }
