@@ -60,12 +60,6 @@
 * 类型：boolean
 * 默认值：false
 * 有效值：true, false
-### disableNetherPortal
-***
-禁用地狱门
-* 类型：boolean
-* 默认值：false
-* 有效值：true, false
 ### netherPortalCooldown
 ***
 更改玩家以外实体穿过地狱门的冷却时间

@@ -2,7 +2,6 @@ package top.sducraft.helpers.rule.chunkLoadHelper;
 
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.TicketType;
-import net.minecraft.world.entity.projectile.ThrownEnderpearl;
 import net.minecraft.world.level.ChunkPos;
 import java.util.Comparator;
 

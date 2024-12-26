@@ -21,17 +21,17 @@ public class SDUcraftCarpetSettings {
 
     @Rule(  categories = {sdu},
             options = {"true", "false"},
-            validators = {NotifyPlayers.class})
+            validators = NotifyPlayers.class)
     public static boolean tickRateChangedMessage = false;
 
     @Rule(  categories = {sdu},
             options = {"true", "false"},
-            validators = {NotifyPlayers.class})
+            validators = NotifyPlayers.class)
     public static boolean easyFakePeace = false;
 
     @Rule(  categories = {sdu},
             options = {"true", "false"},
-            validators = {NotifyPlayers.class})
+            validators = NotifyPlayers.class)
     public static boolean easyCommand = false;
 
     @Rule(

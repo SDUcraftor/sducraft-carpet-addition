@@ -1,6 +1,6 @@
 English | [简体中文](./readme_cn.md)
 # Description
-This is a [carpet](https://github.com/gnembon/fabric-carpet) addition mod of ETP server
+This is a [carpet](https://github.com/gnembon/fabric-carpet) addition mod of SDUcraft
 
 ----
 
@@ -65,4 +65,4 @@ Modifie the cooldown for entity teleport through a nether portal except player
 * Default value: 300
 * Suggested value: 300
 * Additional notes:
-  * Cannot be negative
+    * Cannot be negative
